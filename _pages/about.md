@@ -19,7 +19,7 @@ social: true
 
 Passionné d'informatique et de cybersécurité, je suis actuellement **Technicien Systèmes & Réseaux** à l'École Nationale des Greffes (Ministère de la Justice), où j'administre l'infrastructure réseau et les systèmes d'information.
 
-Titulaire d'une **Licence Professionnelle Administration, Sécurité des Systèmes et des Réseaux (Mention Bien)**, je suis admis en **Master Cybersécurité au CNAM Bretagne** (parcours Sécurité informatique, cybersécurité et cybermenaces) pour la rentrée 2026.
+Titulaire d'une **Licence Professionnelle Administration, Sécurité des Systèmes et des Réseaux**, je suis admis en **Master Cybersécurité au CNAM Bretagne** (parcours Sécurité informatique, cybersécurité et cybermenaces) pour la rentrée 2026.
 
 Je développe mes compétences au quotidien via un homelab personnel couvrant la virtualisation (Proxmox, ESXi), la sécurité (Wazuh, Suricata, OpenCTI), l'automatisation (Ansible, Python) et les réseaux (pfSense, VLANs, WireGuard).
 
