@@ -4,15 +4,12 @@ cv:
   email: kamissoko89@yahoo.fr
   location: Dijon, France
   image: ""
-  summary: Administrateur systèmes et réseaux avec plus de trois ans d'expérience 
-dans un environnement ministériel exigeant. Titulaire d'une Licence 
-Professionnelle Administration et Sécurité des Systèmes et Réseaux 
-je possède des compétences en administration 
-Windows, virtualisation, sécurité des infrastructures et support 
-technique. Rigoureux et orienté amélioration continue, je souhaite 
-mettre mes compétences au service d'environnements techniques où je 
-pourrai contribuer à l'évolution et à la sécurisation du système 
-d'information
+  summary: >
+    Administrateur systèmes et réseaux avec plus de trois ans d'expérience
+    dans un environnement ministériel exigeant. Titulaire d'une Licence
+    Professionnelle Administration Sécurité,Systèmes et Réseaux,
+    je possède des compétences en administration Windows,Linux, virtualisation,
+    sécurité des infrastructures et support technique.
 
   social_networks:
     - network: LinkedIn
