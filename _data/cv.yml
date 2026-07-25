@@ -1,6 +1,6 @@
 cv:
   name: Adama Kamissoko
-  label: Administrateur Systèmes, Réseaux & Sécurité
+  label: Administrateur Systèmes, Réseaux et Sécurité
   email: kamissoko89@yahoo.fr
   location: Dijon, France
   image: ""
@@ -8,7 +8,7 @@ cv:
     Administrateur systèmes et réseaux avec plus de trois ans d'expérience
     dans un environnement ministériel exigeant. Titulaire d'une Licence
     Professionnelle Administration Sécurité, Systèmes et Réseaux,
-    je possède des compétences en administration Windows, Linux, virtualisation,
+    je possède des compétences en administration Windows Linux virtualisation,
     sécurité des infrastructures et support technique.
   social_networks:
     - network: LinkedIn
@@ -65,7 +65,7 @@ cv:
         details: Windows Server 2019/2022/2025, Active Directory, GPO, Linux Debian/Ubuntu
       - label: Virtualisation
         details: VMware ESXi, vCenter, Proxmox VE, Docker
-      - label: Réseaux & Sécurité
+      - label: Réseaux et Sécurité
         details: TCP/IP, DNS, DHCP, VLAN, VPN, pfSense, Stormshield, WireGuard
       - label: SOC & Supervision
         details: Wazuh, Suricata, OpenCTI, TheHive, Prometheus, Grafana, Centreon
