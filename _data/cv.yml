@@ -1,18 +1,24 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Adama KAMISSOKO
+  label: Administrateur Systèmes, Réseaux & Sécurité
+  email: kamissoko89@yahoo.fr
+  location: Dijon, France
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Administrateur systèmes et réseaux avec plus de trois ans d'expérience 
+dans un environnement ministériel exigeant. Titulaire d'une Licence 
+Professionnelle Administration et Sécurité des Systèmes et Réseaux 
+je possède des compétences en administration 
+Windows, virtualisation, sécurité des infrastructures et support 
+technique. Rigoureux et orienté amélioration continue, je souhaite 
+mettre mes compétences au service d'environnements techniques où je 
+pourrai contribuer à l'évolution et à la sécurisation du système 
+d'information
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
     - network: LinkedIn
-      username: example
+      username: adama-a-kamissoko
+    - network: GitHub
+      username: kamissoko89
 
   address:
     street: 2712 Broadway St
