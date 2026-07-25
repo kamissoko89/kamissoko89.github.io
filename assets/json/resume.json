@@ -1,221 +1,216 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Adama Kamissoko",
+    "label": "Administrateur Systèmes, Réseaux & Sécurité",
     "image": "",
-    "email": "einstein@example.com",
-    "phone": "(912) 123-4567",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "kamissoko89@yahoo.fr",
+    "phone": "06 58 05 43 00",
+    "url": "https://kamissoko89.github.io",
+    "summary": "Administrateur systèmes et réseaux avec plus de trois ans d'expérience dans un environnement ministériel exigeant. Titulaire d'une Licence Professionnelle Administration et Sécurité des Systèmes et Réseaux, je possède des compétences en administration Windows, virtualisation, sécurité des infrastructures et support technique.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "21160 Marsannay-la-Côte",
+      "city": "Dijon",
+      "region": "Bourgogne-Franche-Comté",
+      "countryCode": "FR"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "adama-a-kamissoko",
+        "url": "https://linkedin.com/in/adama-a-kamissoko"
+      },
+      {
+        "network": "GitHub",
+        "username": "kamissoko89",
+        "url": "https://github.com/kamissoko89"
+      }
+    ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Princeton University, NJ",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity", "Description 2."]
+      "name": "École Nationale des Greffes — Ministère de la Justice",
+      "position": "Technicien Informatique",
+      "location": "Dijon (21)",
+      "startDate": "2022-11",
+      "endDate": "",
+      "summary": "Administration de l'infrastructure systèmes et réseaux d'un établissement public sous tutelle du Ministère de la Justice (plus de 2000 utilisateurs).",
+      "highlights": [
+        "Diagnostic et résolution des incidents matériels, logiciels et systèmes auprès de plus de 2000 utilisateurs, avec suivi via GLPI",
+        "Administration et maintien en conditions opérationnelles d'un parc de plus de 2000 postes de travail et équipements de visioconférence",
+        "Administration des comptes, groupes et droits d'accès sous Active Directory (création, modification, gestion des habilitations, GPO)",
+        "Participation à l'amélioration des outils de supervision (GLPI, Centreon)",
+        "Rédaction et mise à jour de procédures techniques et guides utilisateurs"
+      ]
     },
     {
-      "name": "California Institute of Technology",
-      "position": "Visiting Professor",
-      "location": "Pasadena, California, US",
-      "startDate": "1933-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": ["Description 1.", "Description 2."]
+      "name": "Ministère de la Justice",
+      "position": "Stagiaire Technicien de Proximité",
+      "location": "Dijon (21)",
+      "startDate": "2022-06",
+      "endDate": "2022-08",
+      "highlights": [
+        "Gestion des incidents concernant les postes de travail",
+        "Masterisation de postes de travail et migration"
+      ]
     },
     {
-      "name": "Kaiser Wilhelm Institute for Physics",
-      "position": "Director",
-      "location": "Berlin, Germany",
-      "startDate": "1917-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": []
+      "name": "École Nationale des Greffes",
+      "position": "Stagiaire Technicien Multimédia et Nouvelles Technologies",
+      "location": "Dijon (21)",
+      "startDate": "2021-10",
+      "endDate": "2021-12",
+      "highlights": [
+        "Assistance aux utilisateurs",
+        "Mise à jour des tutoriels et sauvegardes des cours Moodle"
+      ]
     },
     {
-      "name": "Karl-Ferdinand University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Prague, Czechoslovakia",
-      "startDate": "1911-01-01",
-      "endDate": "1917-01-01",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "name": "University of Zurich",
-      "position": "Associate Professor of Theoretical Physics",
-      "location": "Zurich, Switzerland",
-      "startDate": "1909-01-01",
-      "endDate": "1911-01-01",
-      "summary": "",
-      "highlights": []
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "EFFIA Stationnement",
+      "position": "Agent d'Exploitation",
+      "location": "Dijon (21)",
+      "startDate": "2016-12",
+      "endDate": "2021-01",
+      "highlights": [
+        "Gestion de la relation client et accompagnement des usagers au quotidien"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Physics",
-      "studyType": "PhD",
-      "startDate": "1900-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": ["Theory of Relativity"],
-      "highlights": ["Description 1.", "Description 2."]
+      "institution": "CNAM Bretagne",
+      "area": "Sécurité informatique, cybersécurité et cybermenaces",
+      "studyType": "Master",
+      "startDate": "2026-10",
+      "endDate": "2028-06",
+      "score": ""
     },
     {
-      "institution": "Eidgenössische Technische Hochschule",
-      "location": "Zurich, Switzerland",
-      "area": "Physics",
-      "studyType": "Federal teaching diploma",
-      "startDate": "1896-01-01",
-      "endDate": "1900-01-01",
-      "score": "",
-      "courses": [],
-      "highlights": ["Description 1.", "Description 2."]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "institution": "Université Paris-Est Créteil (UPEC)",
+      "area": "Administration et Sécurité des Systèmes et des Réseaux",
+      "studyType": "Licence Professionnelle",
+      "startDate": "2021-09",
+      "endDate": "2022-06",
+      "score": "Mention Bien"
     },
     {
-      "title": "Max Planck Medal",
-      "date": "2029-01-01",
-      "awarder": "German Physical Society",
-      "summary": ""
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-location-dot"
+      "institution": "WebForce3 Bourgogne",
+      "area": "Systèmes et Réseaux",
+      "studyType": "Technicien Supérieur (BAC+2)",
+      "startDate": "2022-01",
+      "endDate": "2022-01"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-envelope"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrodynamik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "institution": "AFPA Montceau-les-Mines",
+      "area": "Assistance Informatique",
+      "studyType": "Technicien d'Assistance Informatique (BAC)",
+      "startDate": "2021-01",
+      "endDate": "2021-01"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Systèmes",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Windows Server 2019/2022/2025",
+        "Active Directory / GPO",
+        "Windows 10/11",
+        "Linux (Debian/Ubuntu)",
+        "Microsoft 365"
+      ]
+    },
+    {
+      "name": "Virtualisation",
+      "keywords": [
+        "VMware ESXi / vCenter",
+        "Proxmox VE",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Réseaux & Sécurité",
+      "keywords": [
+        "TCP/IP, DNS, DHCP",
+        "VLAN / VPN",
+        "pfSense / Stormshield",
+        "WireGuard",
+        "Suricata / Wazuh"
+      ]
+    },
+    {
+      "name": "Automatisation",
+      "keywords": [
+        "Ansible",
+        "Python",
+        "PowerShell"
+      ]
+    },
+    {
+      "name": "Supervision & Sauvegarde",
+      "keywords": [
+        "Centreon",
+        "GLPI",
+        "Veeam Backup",
+        "Prometheus / Grafana"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "language": "Français",
+      "fluency": "Langue maternelle"
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "language": "Anglais",
+      "fluency": "Intermédiaire (B1)"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "name": "Veille technologique"
     },
     {
-      "name": "Professor Jane Smith",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "name": "Football"
+    },
+    {
+      "name": "Voyages"
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01"
+      "name": "SOC Open Source Homelab",
+      "summary": "Déploiement d'un SOC complet sur infrastructure personnelle.",
+      "highlights": [
+        "Wazuh, Suricata (49 000+ signatures), OpenCTI, TheHive, Shuffle",
+        "Intégration MISP pour la threat intelligence",
+        "Orchestration des alertes via Shuffle (SOAR)"
+      ],
+      "startDate": "2024-01",
+      "endDate": ""
+    },
+    {
+      "name": "Infrastructure Homelab",
+      "summary": "Infrastructure de lab personnelle pour la formation et l'expérimentation.",
+      "highlights": [
+        "Proxmox VE + VMware ESXi",
+        "DNS split-horizon avec AdGuard Home + Unbound",
+        "Certificats wildcard avec acme.sh + Cloudflare",
+        "Segmentation réseau OpenWrt avec VLANs"
+      ],
+      "startDate": "2022-01",
+      "endDate": ""
+    },
+    {
+      "name": "Projets Licence Professionnelle",
+      "summary": "Projets réalisés dans le cadre de la Licence Professionnelle ASSR.",
+      "highlights": [
+        "Déploiement infrastructure VMware ESXi",
+        "Pare-feu pfSense avec VPN et filtrage réseau",
+        "Segmentation réseau VLAN",
+        "Automatisation avec Ansible",
+        "Supervision avec Centreon et Veeam Backup"
+      ],
+      "startDate": "2021-09",
+      "endDate": "2022-06"
     }
   ]
 }
