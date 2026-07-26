@@ -1,80 +1,59 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: Déploiement Veeam Backup & Replication
+description: Sauvegarde automatisée d'une infrastructure VMware et validation d'un plan de reprise après sinistre
+img: assets/img/6.jpg
+importance: 6
+category: infrastructure
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Objectif du projet
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Installer, configurer et tester Veeam Backup & Replication pour protéger une infrastructure VMware (ESXi + vCenter) via des sauvegardes automatisées.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Ce projet avait aussi pour but de valider un scénario de reprise après sinistre (PRA).
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Contexte
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Dans mon lab VMware (ESXi + vCenter), la sauvegarde des VMs était essentielle pour garantir la sécurité des données. J'ai donc choisi Veeam, outil reconnu pour sa fiabilité, sa puissance et sa facilité de restauration.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Le but était d'avoir une politique de sauvegarde claire, testée, documentée, et adaptée à une PME ou un lab réel.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Démarche et mise en œuvre
 
-{% raw %}
+**Outils utilisés** : Veeam Backup & Replication, ESXi, vCenter, Windows Server
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+**Étapes clés** :
+- Installation de Veeam sur un Windows Server
+- Ajout de vCenter comme source de VMs
+- Création de jobs de sauvegarde :
+  - choix des VMs critiques
+  - fréquence (quotidienne)
+  - cible de stockage (NAS)
+  - durée de rétention
+- Tests de restauration :
+  - VMs complètes
+  - fichiers individuels
+  - PRA simulé
+- Journalisation et supervision des jobs
 
-{% endraw %}
+## Réalisations et livrables
+
+- Plateforme Veeam opérationnelle
+- Jobs automatisés quotidiens
+- Tests de restauration réussis (VM complète + fichiers)
+- Documentation complète (captures, schéma, étapes)
+
+## Compétences mobilisées
+
+- **C1** : Fournir les services liés au SI (mise en place de sauvegarde centralisée, automatisée et intégrée à une infra existante)
+- **C4** : Sécurité des SI (plan de sauvegarde solide, PRA testé, stockage isolé, gestion des risques de perte de données)
+
+## Retour d'expérience
+
+Projet indispensable dans tout environnement pro ou perso. J'ai pris conscience que sauvegarder ne suffit pas : il faut tester la restauration.
+
+Le plus compliqué a été d'optimiser le stockage sans saturer le disque et de définir des plages horaires de sauvegarde efficaces.
+
+Avec le recul, je mettrais en place une restauration automatique planifiée pour renforcer la fiabilité du système. Ce projet m'a réellement permis de comprendre la notion d'infrastructure résiliente.
