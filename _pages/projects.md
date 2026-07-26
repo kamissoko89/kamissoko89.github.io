@@ -2,7 +2,7 @@
 layout: page
 title: projets
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Mes réalisations techniques en administration systèmes, réseaux et cybersécurité.
 nav: true
 nav_order: 3
 display_categories: [work, fun]
