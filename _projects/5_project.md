@@ -1,80 +1,55 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Participation à des communautés techniques
+description: Veille collaborative et contribution active dans des communautés IT et cybersécurité
+img: assets/img/5.jpg
+importance: 5
+category: veille
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Objectif du projet
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Participer activement à des forums techniques (Reddit, Discord, GitHub), poser des questions, répondre à d'autres, documenter mes projets et réaliser une veille continue.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+L'objectif était d'élargir mes compétences techniques par l'échange, l'analyse collaborative et la contribution à des discussions/projets open source.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Contexte
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Dans une logique d'autoformation et de progression continue, j'ai intégré plusieurs communautés IT (Discord, Reddit, GitHub) dans les domaines de la cybersécurité, des systèmes, réseaux, et virtualisation.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Ces interactions m'ont permis d'enrichir ma pratique, de partager mes scripts (PowerShell, pfSense, etc.), de suivre l'actualité technologique et d'apprendre via des retours concrets.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Démarche et mise en œuvre
 
-{% raw %}
+**Outils utilisés** : Reddit, Discord, GitHub, StackOverflow, Notion
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+**Actions menées** :
+- Sélection de serveurs Discord (Sécu, VMware, pfSense, Linux, Sysadmin...)
+- Participation active aux discussions, demandes de relecture de scripts, entraide technique
+- Partage de mes projets : scripts PowerCLI, captures de configurations (pfSense, Veeam…)
+- Utilisation d'outils de veille (bots CVE, alertes GitHub, feeds RSS)
+- Structuration de mes recherches et échanges via Notion
 
-{% endraw %}
+## Résultats et livrables
+
+- Contributions visibles sur forums : captures de posts Reddit, GitHub Issues, messages Discord
+- Scripts améliorés ou commentés (PowerShell, pfSense NAT, etc.)
+- Partages de ressources (tutoriels, liens officiels, bonnes pratiques)
+- Liste de communautés suivies
+- Carnet de veille personnel (Notion)
+
+## Compétences mobilisées
+
+- **C2** : Collaborer avec les acteurs de la filière SI (interaction claire, bienveillante et rigoureuse sur les forums et Discord techniques)
+- **C3** : Réaliser une veille technologique (participation à des discussions spécialisées, veille partagée sur vulnérabilités CVE, outils récents, pratiques d'automatisation)
+
+## Retour d'expérience
+
+Une expérience extrêmement formatrice, qui m'a permis de mieux structurer ma veille et de progresser rapidement grâce à des retours d'experts.
+
+J'ai appris à poser les bonnes questions, à vulgariser mes solutions, et à m'immerger dans une culture IT collaborative.
+
+**Difficulté principale** : trier les bonnes sources dans un flux d'infos dense.
+
+Aujourd'hui, cette pratique fait partie de mon quotidien professionnel et personnel.
