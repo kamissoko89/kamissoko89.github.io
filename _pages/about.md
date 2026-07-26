@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.justice.fr/institution/ecole-nationale-greffes'>École Nationale des Greffes</a> · Ministère de la Justice · Dijon
+subtitle :/
 
 profile:
   align: right
