@@ -1,81 +1,56 @@
 ---
 layout: page
-title: project 7
-description: with background image
-img: assets/img/4.jpg
-importance: 1
-category: work
-related_publications: true
+title: Supervision avec Centreon
+description: Déploiement d'une solution de monitoring pour surveiller disponibilité et services critiques
+img: assets/img/7.jpg
+importance: 7
+category: infrastructure
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Contexte
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+La supervision réseau est un pilier essentiel du maintien en condition opérationnelle d'une infrastructure informatique. Dans le cadre de mon infrastructure virtuelle, j'ai mis en place une solution de supervision basée sur Centreon, afin de surveiller l'état des serveurs, des services critiques et de garantir une réactivité en cas de panne.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Objectif du projet
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Déployer une solution de supervision avec Centreon pour :
+- Suivre en temps réel la disponibilité des équipements
+- Détecter les anomalies (ping, services, ressources)
+- Être alerté automatiquement en cas de panne
+- Centraliser les métriques sur une interface web lisible
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Démarche et mise en œuvre
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+**Outils utilisés** : Centreon, Linux (Oracle/CentOS), SNMP, SSH, VMware, pfSense
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+**Étapes** :
+- Installation de Centreon sur une VM Linux dédiée
+- Configuration réseau et accès à l'interface Web d'administration
+- Ajout des hôtes (VMs, routeur, pare-feu pfSense)
+- Paramétrage des services à surveiller (ping, HTTP, espace disque, CPU…)
+- Intégration avec l'infrastructure VMware via les plugins disponibles
+- Mise en place d'alertes par e-mail et tableau de bord
 
-{% raw %}
+## Réalisations et livrables
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- Solution Centreon opérationnelle
+- Supervision active d'une dizaine de machines et services
+- Alertes en cas de perte de connexion ou surcharge
+- Tableau de bord centralisé
+- Documentation d'installation + captures des interfaces
+- Captures des états (OK / Warning / Critical)
 
-{% endraw %}
+## Compétences mobilisées
+
+- **C1** : Fournir les services liés au SI (mise en place d'un outil essentiel au fonctionnement du SI)
+- **C3** : Veille technologique (recherche de templates, plugins, résolution d'erreurs Linux)
+- **C4** : Sécurité des SI (surveillance des anomalies CPU anormal, ports ouverts, anticipation des pannes)
+
+## Retour d'expérience
+
+Ce projet m'a permis de découvrir l'environnement professionnel de supervision avec Centreon. J'ai appris à organiser la surveillance de façon claire, à configurer des seuils critiques adaptés, et à anticiper les problèmes.
+
+Les principales difficultés ont été liées aux dépendances système lors de l'installation et à la configuration SNMP sur certains équipements.
+
+Je prévois d'explorer Zabbix ou Grafana pour comparer les approches visuelles et les intégrations. La supervision est un élément indispensable dans toute infrastructure sérieuse.
