@@ -1,80 +1,55 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Veille technologique - Proxmox vs VMware ESXi
+description: Étude comparative des hyperviseurs pour aide à la décision en environnement PME/TPE
+img: assets/img/4.jpg
+importance: 4
+category: veille
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Objectif du projet
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Évaluer les avantages et inconvénients de Proxmox VE et VMware ESXi selon plusieurs critères (performance, coût, support, fonctionnalités…) pour aider une PME/TPE dans le choix d'un hyperviseur.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Contexte
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Dans le cadre de ma formation, j'ai mené une veille technologique comparative entre deux solutions de virtualisation :
+- Proxmox (open-source)
+- VMware ESXi (propriétaire)
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Cette démarche s'inscrit dans un contexte d'aide à la décision pour une PME souhaitant virtualiser ses serveurs. J'ai confronté des sources documentaires, des retours d'expérience et des tests en environnement contrôlé.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Outils utilisés
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Proxmox VE, VMware ESXi, documentation officielle, forums communautaires, lab personnel (machines virtuelles/physiques)
 
-{% raw %}
+## Démarche et mise en œuvre
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- Définition des critères : coût, performances, HA, sécurité, sauvegarde, administration
+- Installation des deux hyperviseurs sur deux machines distinctes
+- Tests réalisés : création de VM, gestion snapshots, gestion réseau, console, sauvegarde
+- Recherche documentaire : documentation officielle, forums, Reddit, comparatifs
+- Construction d'un tableau comparatif synthétique
+- Rédaction d'un rapport de veille + recommandations selon usage
 
-{% endraw %}
+## Résultats et livrables
+
+- Tableau comparatif clair des différences Proxmox / ESXi
+- Rapport synthétique avec avantages/inconvénients
+- Captures des interfaces d'administration
+- Préconisations selon les profils (entreprise, formation, usage perso)
+- Bibliographie des sources web
+
+## Compétences mobilisées
+
+- **C3** : Veille technologique (recherche multi-sources, tests croisés, esprit critique)
+- **C1** : Systèmes d'information (manipulation d'hyperviseurs, gestion de VMs, configuration réseau)
+
+## Retour d'expérience
+
+Ce projet m'a aidé à mieux comprendre les critères techniques et économiques liés au choix d'un hyperviseur. Proxmox m'a impressionné par ses fonctionnalités avancées malgré sa gratuité, tandis que VMware conserve sa robustesse et sa stabilité.
+
+Le plus dur a été de rester neutre : j'ai appris à argumenter objectivement.
+
+Aujourd'hui, je suis capable de conseiller une solution adaptée selon un besoin donné (budget, usage, ressources disponibles).
