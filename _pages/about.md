@@ -14,7 +14,7 @@ profile:
 
 news: false
 selected_papers: false
-social: true
+social: false
 ---
 
 Passionné d'informatique et de cybersécurité, je suis actuellement **Technicien Systèmes & Réseaux** à l'École Nationale des Greffes (Ministère de la Justice), où j'administre l'infrastructure réseau et les systèmes d'information.
