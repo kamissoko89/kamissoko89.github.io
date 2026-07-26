@@ -1,81 +1,55 @@
 ---
 layout: page
-title: project 8
-description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
-importance: 2
-category: work
-giscus_comments: true
+title: Contrôleur de Domaine Active Directory
+description: Déploiement AD DS, GPO et centralisation de la gestion des utilisateurs sous Windows Server
+img: assets/img/8.jpg
+importance: 8
+category: infrastructure
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Contexte
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Dans le cadre de ma formation, j'ai souhaité mettre en œuvre une infrastructure Windows Server avec un contrôleur de domaine Active Directory (AD DS). L'objectif était de centraliser la gestion des utilisateurs et des ressources, comme dans un environnement d'entreprise.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Ce projet s'inscrit dans une logique de simulation d'infrastructure réelle, avec des clients intégrés au domaine, des règles GPO, et une gestion centralisée de l'authentification.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Objectif du projet
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Déployer un serveur Active Directory sous Windows Server, intégrer des postes clients, configurer les services DNS/DHCP liés, et appliquer des GPOs (Group Policies) pour contrôler les postes à distance.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Démarche et mise en œuvre
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+**Outils utilisés** : Windows Server 2022, Windows 10, AD DS, DNS, DHCP, GPO, VMware Workstation
 
-{% raw %}
+**Étapes clés** :
+- Installation de Windows Server 2022 sur une VM dédiée
+- Ajout du rôle AD DS (Active Directory Domain Services)
+- Promotion du serveur en tant que contrôleur de domaine
+- Configuration du DNS pour la résolution des noms internes
+- Création d'unités organisationnelles (OU) : utilisateurs, ordinateurs, services
+- Intégration de clients Windows 10 au domaine
+- Mise en place de GPO (ex : blocage du panneau de configuration, mot de passe fort)
+- Installation du rôle DHCP pour attribuer dynamiquement des IP aux clients
+- Création de scripts de connexion automatique (scripts de logon)
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+## Réalisations et livrables
 
-{% endraw %}
+- Domaine fonctionnel et clients intégrés
+- GPO appliquées selon les profils
+- Tests de connexion, sécurité, et accès
+- Captures d'écran de l'environnement
+- Documentation de l'installation et de la configuration
+
+## Compétences mobilisées
+
+- **C1** : Fournir les services liés au SI (configuration d'un domaine, intégration d'utilisateurs et clients, déploiement d'outils systèmes)
+- **C4** : Sécurité des SI (application de règles de sécurité via GPO, contrôle d'accès, renforcement du SI via politiques d'annuaire)
+
+## Retour d'expérience
+
+Ce projet m'a permis de maîtriser l'administration d'un annuaire Active Directory et d'en comprendre les enjeux : sécurité, organisation, et gestion centralisée.
+
+Les GPOs sont très puissantes mais nécessitent une bonne planification pour éviter les erreurs. J'ai appris à résoudre les problèmes de réplication DNS et d'intégration client.
+
+Si c'était à refaire, je testerais également RSAT et la gestion multi-sites avec plusieurs DC.
