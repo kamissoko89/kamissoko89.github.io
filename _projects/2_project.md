@@ -1,81 +1,83 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Portail Captif Multi-Zones pfSense
+description: Authentification LDAP et invités, filtrage web et traçabilité RGPD
+img: assets/img/2.jpg
 importance: 2
-category: work
-giscus_comments: true
+category: securite
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Objectif du projet
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+- **Protection de l'accès réseau** : portail captif imposant une authentification préalable
+- **Double authentification** : LDAP pour les internes, code temporaire pour les invités
+- **Filtrage Internet** via Squid/SquidGuard pour bloquer les contenus inadaptés (RGPD & mineurs)
+- **Traçabilité et journalisation** : archivage des logs pendant 1 an
+- Solution open source, évolutive et reproductible, pouvant être déployée dans d'autres établissements
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Contexte
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Dans le cadre d'un projet réalisé pour un collège accueillant des mineurs, il a été décidé de mettre en place une solution de sécurisation et de contrôle d'accès réseau. L'environnement technique repose sur une infrastructure virtualisée VMware ESXi et exploite des solutions open source afin de garantir robustesse, coût réduit et conformité légale.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+L'objectif principal était de sécuriser les accès au réseau Wi-Fi et filaire, en différenciant :
+- Les utilisateurs internes (authentifiés via LDAP)
+- Les invités (accès ponctuel via code temporaire envoyé par email)
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Cahier des charges
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- **Accès interne** : LDAP centralisé pour le personnel/élèves
+- **Accès invité** : génération automatique de codes envoyés par email
+- **Sécurité** : filtrage web (SquidGuard), authentification obligatoire, logs
+- **Traçabilité légale** : conservation des accès et navigation ≥ 1 an
+- **Virtualisation** : hébergement sur ESXi (VM pfSense, VM test, serveur LDAP)
 
-{% raw %}
+## Architecture visée
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- 1 VM pfSense (pare-feu, DHCP, DNS, portail captif, NAT, filtrage)
+- 1 serveur LDAP (authentification interne)
+- 1 serveur SMTP (envoi des codes invités)
+- Squid + SquidGuard (proxy et filtrage web)
+- Stockage externe (logs et sauvegardes)
+- Deux VLANs distincts : LAN interne (LDAP) et LAN invité (portail captif + codes temporaires)
 
-{% endraw %}
+## Démarche et mise en œuvre
+
+- Installation pfSense sur une VM ESXi (2 interfaces : WAN/LAN)
+- Configuration réseau : plan IP + segmentation interne/invités
+- Mise en place du portail captif :
+  - Zone LDAP → connexion avec serveur d'annuaire
+  - Zone invité → formulaire + génération code temporaire
+- Filtrage Internet : installation Squid + SquidGuard, import des blacklists (sites adultes, paris, etc.)
+- SMTP : configuration plugin pfSense pour envoi automatique des identifiants invités
+- Journalisation : activation Syslog vers serveur externe + rétention 1 an
+- Tests : PC Windows, smartphone Android → authentification OK, filtrage OK, logs générés
+
+## Résultats et livrables
+
+- Portail captif fonctionnel et accessible sur PC/mobile
+- Double mode d'authentification (LDAP + Invités)
+- Filtrage opérationnel (sites interdits bloqués)
+- Traçabilité complète (logs centralisés)
+- Documentation livrée : cahier des charges, guide de déploiement, schéma d'architecture, procédures utilisateurs
+
+## Problèmes rencontrés et solutions
+
+- **LDAP** : mauvaise configuration du DN → corrigée via tests avec `ldapsearch`
+- **Isolation VLAN** : trafic invité fuyait vers LAN → corrigé par règles pfSense strictes
+- **Filtrage SquidGuard** : certaines listes trop larges → adaptation des règles pour éviter faux positifs
+
+## Compétences mobilisées
+
+- **C1** : Fournir les services liés au SI (mise en place d'un service réseau sécurisé et documenté)
+- **C2** : Collaborer avec les acteurs (rédaction de cahier des charges, documentation claire)
+- **C3** : Veille technologique (étude comparée pfSense/Squid/SquidGuard, conformité RGPD)
+- **C4** : Sécuriser le SI (filtrage web, VLAN, traçabilité, sauvegardes)
+
+## Retour d'expérience
+
+Ce projet m'a permis d'approfondir la gestion d'accès réseau et l'intégration LDAP, de comprendre les enjeux légaux (RGPD, journalisation), de travailler sur la segmentation réseau via pfSense et le filtrage web avec Squid/SquidGuard, et de développer des compétences en documentation technique (guide, procédures, schéma).
+
+**Améliorations possibles :**
+- Ajout d'IDS/IPS (Snort/Suricata)
+- Automatisation via Ansible pour déploiement multi-sites
