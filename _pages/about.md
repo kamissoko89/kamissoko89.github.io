@@ -8,8 +8,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>Dijon, Bourgogne-Franche-Comté</p>
-    <p>France</p>
+    Dijon, Bourgogne-Franche-Comté<br>France
 
 news: false
 selected_papers: false
