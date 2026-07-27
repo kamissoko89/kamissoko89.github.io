@@ -2,6 +2,7 @@
 layout: about
 title: à propos
 permalink: /
+subtitle: <a href='https://www.justice.fr/institution/ecole-nationale-greffes'>École Nationale des Greffes</a> · Ministère de la Justice · Dijon
 
 profile:
   align: right
@@ -18,40 +19,85 @@ social: true
 
 ## Bienvenue sur mon portfolio
 
-Je m'appelle **Adama KAMISSOKO** et je suis **Technicien Systèmes & Réseaux** à l'École Nationale des Greffes (Ministère de la Justice) à Dijon.
+Je suis **Adama KAMISSOKO**, Technicien Systèmes & Réseaux au sein de l'École Nationale des Greffes (Ministère de la Justice) à Dijon.
 
-Passionné par les infrastructures informatiques et la cybersécurité, je conçois, déploie, administre et sécurise des environnements systèmes et réseaux. J'accorde une attention particulière à l'automatisation, à la supervision et à la mise en œuvre des bonnes pratiques de sécurité afin de garantir des infrastructures fiables, performantes et résilientes.
+Spécialisé dans l'administration des infrastructures Windows et Linux, la cybersécurité et l'automatisation, j'interviens sur le déploiement, l'exploitation, la sécurisation et l'évolution des environnements informatiques.
 
-Titulaire d'une **Licence Professionnelle Administrateur Systèmes, Sécurité et Réseaux (ASSR)**, je développe continuellement mes compétences grâce à une veille technologique active, des formations continues et un homelab personnel dédié à l'expérimentation de nouvelles architectures et solutions d'infrastructure.
+Mon objectif est de concevoir des infrastructures fiables, performantes et résilientes en m'appuyant sur les bonnes pratiques d'administration système, de sécurité et d'automatisation.
+
+Titulaire d'une **Licence Professionnelle Administrateur Systèmes, Sécurité et Réseaux (ASSR)**, je développe continuellement mes compétences au travers de projets techniques, d'une veille technologique active et d'un homelab personnel dédié à l'expérimentation de nouvelles solutions d'infrastructure et de cybersécurité.
+
+## Quelques repères
+
+- Plus de 20 projets techniques documentés
+- Administration d'environnements Windows Server et Linux
+- Mise en œuvre de solutions de virtualisation et de supervision
+- Déploiement de solutions de cybersécurité et de contrôle d'accès
+- Automatisation de tâches d'administration avec PowerShell, Python et Ansible
+- Homelab dédié aux tests, à la veille technologique et à l'expérimentation
 
 ## À propos de ce portfolio
 
-Ce portfolio rassemble les projets techniques que j'ai réalisés dans le cadre de ma formation, de mon expérience professionnelle et de mes travaux personnels.
+Ce portfolio rassemble les projets que j'ai réalisés dans le cadre de ma formation, de mon activité professionnelle et de mes travaux personnels.
 
-Chaque projet répond à une problématique concrète et présente la démarche adoptée, les choix d'architecture, les technologies utilisées ainsi que les résultats obtenus. L'objectif est d'illustrer ma capacité à analyser un besoin, concevoir une solution, la mettre en œuvre et en assurer la documentation.
+Chaque projet répond à une problématique concrète et présente la démarche adoptée, les choix techniques effectués, les technologies utilisées ainsi que les résultats obtenus.
 
-Vous y découvrirez des réalisations dans les domaines suivants :
+L'objectif est de démontrer ma capacité à :
 
-- **Administration des systèmes :** Windows Server, Active Directory, Linux
-- **Virtualisation :** VMware vSphere / ESXi, Proxmox VE
-- **Réseaux & Sécurité :** VLAN, VPN (pfSense, WireGuard), contrôle d'accès
-- **Supervision & Sauvegarde :** Centreon, Veeam Backup
-- **Automatisation & Scripting :** PowerShell, Python, Ansible
-- **Cybersécurité :** Wazuh, Suricata, OpenCTI
+- Analyser un besoin
+- Concevoir une solution adaptée
+- Déployer une infrastructure
+- Assurer sa sécurité et son exploitation
+- Produire une documentation claire
+- Améliorer continuellement les services mis en œuvre
 
-Les projets sont organisés selon les quatre blocs de compétences de la Licence Professionnelle ASSR et mettent en évidence les connaissances et les savoir-faire acquis dans les domaines de l'administration des systèmes, des réseaux et de la cybersécurité.
+## Domaines de compétences
+
+**Administration Systèmes**
+Windows Server, Active Directory, GPO, DNS / DHCP, Linux (Debian, Ubuntu)
+
+**Virtualisation**
+VMware vSphere / ESXi, Proxmox VE, gestion des machines virtuelles, optimisation des ressources
+
+**Réseaux & Sécurité**
+VLAN, routage et segmentation réseau, pfSense, WireGuard, contrôle d'accès, pare-feu
+
+**Supervision & Sauvegarde**
+Centreon, SNMP, supervision des services, Veeam Backup
+
+**Automatisation & Scripting**
+PowerShell, Python, Ansible, Git & GitHub
+
+**Cybersécurité**
+Wazuh, Suricata, OpenCTI, analyse des événements de sécurité, durcissement des systèmes
+
+## Projets phares
+
+Vous retrouverez notamment sur ce portfolio les réalisations suivantes :
+
+- Automatisation du patch management avec Ansible
+- Déploiement d'une infrastructure Active Directory
+- Segmentation réseau via VLAN sous OpenWrt
+- Mise en œuvre d'une supervision Centreon
+- Déploiement d'un SIEM avec Wazuh
+- Mise en place d'une plateforme CTI avec OpenCTI
+- Solutions VPN sécurisées avec WireGuard et pfSense
+- Projets de virtualisation sous VMware ESXi et Proxmox VE
+
+Chaque projet est documenté avec son contexte, son architecture, la méthodologie appliquée et les compétences mobilisées.
 
 ## Mon approche
 
 Au-delà de la mise en œuvre technique, j'accorde une importance particulière à la méthodologie, à la documentation et à l'amélioration continue.
 
-Chaque projet est structuré autour des éléments suivants :
+Chaque projet est présenté selon une démarche structurée :
 
-- Contexte et objectifs
-- Architecture et choix techniques
-- Étapes de mise en œuvre
-- Difficultés rencontrées et solutions apportées
-- Résultats obtenus
-- Compétences mobilisées
+1. Contexte et objectifs
+2. Analyse du besoin
+3. Architecture et choix techniques
+4. Mise en œuvre
+5. Difficultés rencontrées et solutions apportées
+6. Résultats obtenus
+7. Compétences acquises
 
-Cette démarche reflète ma façon de travailler : analyser, concevoir, déployer, sécuriser, documenter et améliorer continuellement les infrastructures informatiques.
+Cette démarche reflète ma vision du métier : comprendre un besoin, concevoir une solution adaptée, la déployer de manière fiable, la sécuriser, la documenter et l'améliorer continuellement.
