@@ -2,11 +2,13 @@
 layout: page
 title: Portail Captif Multi-Zones pfSense
 description: Authentification LDAP et invités, filtrage web et traçabilité RGPD
-img: assets/img/2.jpg
+img: assets/img/projet2-couverture.jpg
 importance: 2
 category: securite
 related_publications: false
 ---
+
+{% include figure.liquid path="assets/img/projet2-couverture.jpg" title="Portail Captif Multi-Zones pfSense" class="img-fluid rounded z-depth-1" %}
 
 ## Objectif du projet
 
@@ -41,6 +43,10 @@ L'objectif principal était de sécuriser les accès au réseau Wi-Fi et filaire
 - Stockage externe (logs et sauvegardes)
 - Deux VLANs distincts : LAN interne (LDAP) et LAN invité (portail captif + codes temporaires)
 
+## Schéma d'architecture
+
+{% include figure.liquid path="assets/img/projet2-schema.jpg" title="Schéma réseau du portail" class="img-fluid rounded z-depth-1" %}
+
 ## Démarche et mise en œuvre
 
 - Installation pfSense sur une VM ESXi (2 interfaces : WAN/LAN)
@@ -60,6 +66,24 @@ L'objectif principal était de sécuriser les accès au réseau Wi-Fi et filaire
 - Filtrage opérationnel (sites interdits bloqués)
 - Traçabilité complète (logs centralisés)
 - Documentation livrée : cahier des charges, guide de déploiement, schéma d'architecture, procédures utilisateurs
+
+## Résultats & Captures
+
+**Interface du portail invité**
+
+{% include figure.liquid path="assets/img/projet2-invite.jpg" title="Portail invité" class="img-fluid rounded z-depth-1" %}
+
+**Connexion via LDAP**
+
+{% include figure.liquid path="assets/img/projet2-login-ldap.jpg" title="Connexion LDAP" class="img-fluid rounded z-depth-1" %}
+
+**Portail connecté côté invité**
+
+{% include figure.liquid path="assets/img/projet2-connected.jpg" title="Portail connecté invité" class="img-fluid rounded z-depth-1" %}
+
+**Portail sur mobile**
+
+{% include figure.liquid path="assets/img/projet2-mobile.jpg" title="Vue mobile du portail" class="img-fluid rounded z-depth-1" %}
 
 ## Problèmes rencontrés et solutions
 
