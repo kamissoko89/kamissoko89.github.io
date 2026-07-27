@@ -2,11 +2,13 @@
 layout: page
 title: Audit de sécurité avec Lynis
 description: Audit et durcissement d'un poste Linux Debian, rapport de conformité avant/après
-img: assets/img/3.jpg
+img: assets/img/projet3-couverture.png
 importance: 3
 category: securite
 related_publications: false
 ---
+
+{% include figure.liquid path="assets/img/projet3-couverture.png" title="Audit de sécurité avec Lynis" class="img-fluid rounded z-depth-1" %}
 
 ## Objectif du projet
 
@@ -21,6 +23,10 @@ Dans le cadre de ma formation en Licence ASSR, j'ai mené un audit de sécurité
 ## Outils utilisés
 
 Lynis, Linux Debian 12, UFW, Fail2ban, Shell
+
+## Schéma d'architecture
+
+{% include figure.liquid path="assets/img/projet3-schema.png" title="Schéma de l'audit" class="img-fluid rounded z-depth-1" %}
 
 ## Démarche et mise en œuvre
 
@@ -41,6 +47,17 @@ Lynis, Linux Debian 12, UFW, Fail2ban, Shell
 - Liste des vulnérabilités et correctifs
 - Captures d'écran
 - Script de durcissement partiel
+
+## Résultats & Captures
+
+**Rapport d'audit Lynis**
+
+{% include figure.liquid path="assets/img/projet3-lynis1.jpg" title="Rapport Lynis - page 1" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projet3-lynis2.jpg" title="Rapport Lynis - page 2" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projet3-lynis3.jpg" title="Rapport Lynis - page 3" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projet3-lynis4.jpg" title="Rapport Lynis - page 4" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projet3-lynis5.jpg" title="Rapport Lynis - page 5" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projet3-lynis6.jpg" title="Rapport Lynis - page 9" class="img-fluid rounded z-depth-1" %}
 
 ## Compétences mobilisées
 
