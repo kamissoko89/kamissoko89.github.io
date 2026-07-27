@@ -2,11 +2,13 @@
 layout: page
 title: Script PowerShell - Arrêt sécurisé infra VMware
 description: Automatisation PowerCLI de l'arrêt ordonné des VMs et hôtes ESXi pour scénario de PRA
-img: assets/img/9.jpg
+img: assets/img/projet9-couverture.png
 importance: 9
 category: automatisation
 related_publications: false
 ---
+
+{% include figure.liquid path="assets/img/projet9-couverture.png" title="Script PowerShell - Arrêt sécurisé infra VMware" class="img-fluid rounded z-depth-1" %}
 
 ## Objectif du projet
 
@@ -21,6 +23,10 @@ Ce projet visait à simuler un plan de reprise d'activité (PRA) dans mon lab VM
 ## Outils utilisés
 
 PowerShell, PowerCLI, VMware vCenter, Windows Server (poste d'administration)
+
+## Schéma d'architecture
+
+{% include figure.liquid path="assets/img/projet9-schema.png" title="Schéma de l'infrastructure" class="img-fluid rounded z-depth-1" %}
 
 ## Démarche et mise en œuvre
 
@@ -41,6 +47,12 @@ PowerShell, PowerCLI, VMware vCenter, Windows Server (poste d'administration)
 - Fichier de configuration externe (JSON/TXT)
 - Captures d'exécution du script (PowerShell ISE)
 - Documentation des commandes utilisées et gestion des erreurs
+
+## Résultats & Captures
+
+**Résultats de l'exécution du script**
+
+{% include figure.liquid path="assets/img/projet9-resultats.png" title="Résultats du script PowerShell" class="img-fluid rounded z-depth-1" %}
 
 ## Compétences mobilisées
 
