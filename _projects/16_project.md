@@ -3,7 +3,7 @@ layout: page
 title: Récupération après PSOD ESXi
 description: Diagnostic et résolution d'un écran violet de la mort avec récupération complète de 26 VMs
 img: assets/img/16.jpg
-importance: 16
+importance: 5
 category: infrastructure
 related_publications: false
 ---

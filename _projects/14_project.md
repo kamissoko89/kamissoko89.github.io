@@ -3,7 +3,7 @@ layout: page
 title: Infrastructure DNS et PKI Homelab
 description: DNS split-horizon, certificats automatisés et distribution PKI sur infrastructure personnelle
 img: assets/img/14.jpg
-importance: 14
+importance: 6
 category: infrastructure
 related_publications: false
 ---
