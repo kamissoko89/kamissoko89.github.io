@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.profile .more-info {
+  font-family: inherit !important;
+}
