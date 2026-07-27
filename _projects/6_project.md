@@ -2,11 +2,13 @@
 layout: page
 title: Déploiement Veeam Backup & Replication
 description: Sauvegarde automatisée d'une infrastructure VMware et validation d'un plan de reprise après sinistre
-img: assets/img/6.jpg
+img: assets/img/projet6-couverture.png
 importance: 6
 category: infrastructure
 related_publications: false
 ---
+
+{% include figure.liquid path="assets/img/projet6-couverture.png" title="Déploiement Veeam Backup & Replication" class="img-fluid rounded z-depth-1" %}
 
 ## Objectif du projet
 
@@ -20,9 +22,15 @@ Dans mon lab VMware (ESXi + vCenter), la sauvegarde des VMs était essentielle p
 
 Le but était d'avoir une politique de sauvegarde claire, testée, documentée, et adaptée à une PME ou un lab réel.
 
-## Démarche et mise en œuvre
+## Outils utilisés
 
-**Outils utilisés** : Veeam Backup & Replication, ESXi, vCenter, Windows Server
+Veeam Backup & Replication, ESXi, vCenter, Windows Server
+
+## Schéma d'architecture
+
+{% include figure.liquid path="assets/img/projet6-schema.png" title="Schéma Veeam" class="img-fluid rounded z-depth-1" %}
+
+## Démarche et mise en œuvre
 
 **Étapes clés** :
 - Installation de Veeam sur un Windows Server
@@ -44,6 +52,21 @@ Le but était d'avoir une politique de sauvegarde claire, testée, documentée, 
 - Jobs automatisés quotidiens
 - Tests de restauration réussis (VM complète + fichiers)
 - Documentation complète (captures, schéma, étapes)
+
+## Résultats & Captures
+
+**Interface Veeam Backup & Replication**
+
+{% include figure.liquid path="assets/img/projet6-interface.jpg" title="Interface Veeam" class="img-fluid rounded z-depth-1" %}
+
+**Jobs de sauvegarde configurés**
+
+{% include figure.liquid path="assets/img/projet6-jobs.jpg" title="Jobs de sauvegarde" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projet6-resultat.jpg" title="Résultat d'exécution du job" class="img-fluid rounded z-depth-1" %}
+
+**Test de restauration réussi**
+
+{% include figure.liquid path="assets/img/projet6-restauration.jpg" title="Restauration réussie d'une VM complète" class="img-fluid rounded z-depth-1" %}
 
 ## Compétences mobilisées
 
