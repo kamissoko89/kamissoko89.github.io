@@ -8,6 +8,9 @@ category: infrastructure
 related_publications: false
 ---
 
+**Technologies :** `Unbound` `AdGuard Home` `acme.sh` `Cloudflare` `Nginx Proxy Manager`
+**Niveau :** 🟡 Intermédiaire
+
 ## Contexte
 
 La gestion manuelle des certificats et de la résolution DNS sur un homelab multi-services (Proxmox, ESXi, NAS, applications web internes) devient rapidement ingérable sans une infrastructure dédiée. J'ai donc conçu une architecture DNS et PKI complète et automatisée.

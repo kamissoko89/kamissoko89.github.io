@@ -8,6 +8,9 @@ category: infrastructure
 related_publications: false
 ---
 
+**Technologies :** `VMware ESXi` `TPM` `Secure Boot` `bash`
+**Niveau :** 🔴 Avancé
+
 ## Contexte
 
 Un hôte ESXi de mon infrastructure personnelle a subi un PSOD (Purple Screen of Death), l'équivalent VMware d'un écran bleu critique, provoqué par une incohérence entre le module TPM et la configuration Secure Boot. Cet incident a rendu l'hôte et l'ensemble de ses 26 machines virtuelles inaccessibles.

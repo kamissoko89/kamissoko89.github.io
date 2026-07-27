@@ -10,6 +10,9 @@ related_publications: false
 
 {% include figure.liquid path="assets/img/projet2-couverture.jpg" title="Portail Captif Multi-Zones pfSense" class="img-fluid rounded z-depth-1" %}
 
+**Technologies :** `pfSense` `LDAP` `Squid` `SquidGuard` `VLAN`
+**Niveau :** 🔴 Avancé
+
 ## Objectif du projet
 
 - **Protection de l'accès réseau** : portail captif imposant une authentification préalable

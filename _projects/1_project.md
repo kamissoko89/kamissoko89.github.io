@@ -10,6 +10,9 @@ related_publications: false
 
 {% include figure.liquid path="assets/img/241-couvert1.png" title="Infrastructure VMware complète" class="img-fluid rounded z-depth-1" %}
 
+**Technologies :** `VMware ESXi` `vCenter` `PowerCLI` `pfSense` `Centreon` `Veeam`
+**Niveau :** 🟡 Intermédiaire
+
 ## Objectif du projet
 
 Concevoir et déployer une infrastructure complète basée sur VMware vSphere (ESXi + vCenter), avec des machines virtuelles configurées, un firewall pfSense, une supervision avec Centreon et une sauvegarde automatisée via Veeam.

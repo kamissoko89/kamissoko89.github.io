@@ -8,6 +8,9 @@ category: infrastructure
 related_publications: false
 ---
 
+**Technologies :** `Proxmox VE` `Ceph` `systemd-boot`
+**Niveau :** 🔴 Avancé
+
 ## Contexte
 
 Le maintien à jour d'une infrastructure de virtualisation est essentiel pour bénéficier des correctifs de sécurité et des nouvelles fonctionnalités. La migration de Proxmox VE 8 vers la version 9 sur mon homelab s'est révélée plus complexe que prévu, nécessitant la résolution de plusieurs blocages techniques successifs.
