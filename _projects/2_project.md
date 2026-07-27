@@ -3,7 +3,7 @@ layout: page
 title: Portail Captif Multi-Zones pfSense
 description: Authentification LDAP et invités, filtrage web et traçabilité RGPD
 img: assets/img/projet2-couverture.jpg
-importance: 2
+importance: 3
 category: securite
 related_publications: false
 ---

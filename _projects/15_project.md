@@ -3,7 +3,7 @@ layout: page
 title: Migration Proxmox VE 8 vers 9
 description: Upgrade majeur d'un cluster Proxmox avec résolution de blocages Ceph et systemd-boot
 img: assets/img/15.jpg
-importance: 15
+importance: 4
 category: infrastructure
 related_publications: false
 ---

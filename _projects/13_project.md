@@ -3,10 +3,13 @@ layout: page
 title: Déploiement d'un SOC Open Source
 description: Centre opérationnel de sécurité personnel avec Wazuh, Suricata, OpenCTI, TheHive et Shuffle
 img: assets/img/13.jpg
-importance: 13
+importance: 1
 category: securite
 related_publications: false
 ---
+
+**Technologies :** `Wazuh` `Suricata` `OpenCTI` `TheHive` `Shuffle`
+**Niveau :** 🔴 Avancé
 
 ## Contexte
 

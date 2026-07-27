@@ -3,7 +3,7 @@ layout: page
 title: Infrastructure VMware complète
 description: Déploiement d'une infrastructure vSphere avec supervision, sécurité et sauvegarde
 img: assets/img/241-couvert1.png
-importance: 1
+importance: 2
 category: infrastructure
 related_publications: false
 ---
