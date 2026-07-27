@@ -2,11 +2,13 @@
 layout: page
 title: Contrôleur de Domaine Active Directory
 description: Déploiement AD DS, GPO et centralisation de la gestion des utilisateurs sous Windows Server
-img: assets/img/8.jpg
+img: assets/img/projet8-couverture.jpg
 importance: 8
 category: infrastructure
 related_publications: false
 ---
+
+{% include figure.liquid path="assets/img/projet8-couverture.jpg" title="Contrôleur de Domaine Active Directory" class="img-fluid rounded z-depth-1" %}
 
 ## Contexte
 
@@ -18,9 +20,15 @@ Ce projet s'inscrit dans une logique de simulation d'infrastructure réelle, ave
 
 Déployer un serveur Active Directory sous Windows Server, intégrer des postes clients, configurer les services DNS/DHCP liés, et appliquer des GPOs (Group Policies) pour contrôler les postes à distance.
 
-## Démarche et mise en œuvre
+## Outils utilisés
 
-**Outils utilisés** : Windows Server 2022, Windows 10, AD DS, DNS, DHCP, GPO, VMware Workstation
+Windows Server 2022, Windows 10, AD DS, DNS, DHCP, GPO, VMware Workstation
+
+## Schéma d'architecture
+
+{% include figure.liquid path="assets/img/projet8-schema.png" title="Schéma Active Directory" class="img-fluid rounded z-depth-1" %}
+
+## Démarche et mise en œuvre
 
 **Étapes clés** :
 - Installation de Windows Server 2022 sur une VM dédiée
@@ -40,6 +48,20 @@ Déployer un serveur Active Directory sous Windows Server, intégrer des postes 
 - Tests de connexion, sécurité, et accès
 - Captures d'écran de l'environnement
 - Documentation de l'installation et de la configuration
+
+## Résultats & Captures
+
+**Gestion du serveur**
+
+{% include figure.liquid path="assets/img/projet8-gestionserver.png" title="Gestion du serveur" class="img-fluid rounded z-depth-1" %}
+
+**Active Directory**
+
+{% include figure.liquid path="assets/img/projet8-ad.png" title="Active Directory Users and Computers" class="img-fluid rounded z-depth-1" %}
+
+**Configuration GPO**
+
+{% include figure.liquid path="assets/img/projet8-gpo.png" title="Stratégies de groupe (GPO)" class="img-fluid rounded z-depth-1" %}
 
 ## Compétences mobilisées
 
