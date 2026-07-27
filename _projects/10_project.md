@@ -2,11 +2,13 @@
 layout: page
 title: VPN WireGuard sur serveur Debian
 description: Tunnel VPN chiffré pour accès distant sécurisé à une infrastructure personnelle
-img: assets/img/10.jpg
+img: assets/img/projet10-couverture.jpg
 importance: 10
 category: reseau
 related_publications: false
 ---
+
+{% include figure.liquid path="assets/img/projet10-couverture.jpg" title="VPN WireGuard sur serveur Debian" class="img-fluid rounded z-depth-1" %}
 
 ## Objectif du projet
 
@@ -21,6 +23,10 @@ L'objectif était d'interconnecter un VPS Debian (accessible 24/7 sur Internet) 
 ## Outils utilisés
 
 WireGuard (paquet wireguard sur Debian), VPS Debian 12 (chez LWS), postes clients (Linux, Windows, Android), pfSense (réseau local), UFW (règles pare-feu)
+
+## Schéma d'architecture
+
+{% include figure.liquid path="assets/img/projet10-schema.png" title="Schéma de l'infrastructure VPN" class="img-fluid rounded z-depth-1" %}
 
 ## Démarche et mise en œuvre
 
@@ -37,13 +43,32 @@ WireGuard (paquet wireguard sur Debian), VPS Debian 12 (chez LWS), postes client
 - Tests de connectivité : ping entre le client et le VPS, redirection vers le réseau interne
 - Démarrage automatique de WireGuard au boot du serveur
 
-## Réalisations et livrables
+## Résultats et livrables
 
 - Tunnel VPN actif et chiffré (testé avec ping, curl ifconfig.me, wg show)
 - Plusieurs clients configurés (PC, smartphone Android)
 - Script d'ajout automatique de nouveaux pairs (génération clé + conf)
 - Documentation complète : wg0.conf, captures WireGuard client, schéma de tunnel, pare-feu
 - Procédure d'installation et d'ajout d'un utilisateur
+
+## Résultats & Captures
+
+**Configuration du serveur WireGuard**
+
+{% include figure.liquid path="assets/img/projet10-config.png" title="Configuration serveur WireGuard" class="img-fluid rounded z-depth-1" %}
+
+**État du tunnel (handshake)**
+
+{% include figure.liquid path="assets/img/projet10-tunnel.png" title="État du tunnel" class="img-fluid rounded z-depth-1" %}
+
+**Configuration du pare-feu**
+
+{% include figure.liquid path="assets/img/projet10-parefeu.png" title="Ouverture du port UDP et forwarding" class="img-fluid rounded z-depth-1" %}
+
+**Gestion des clients**
+
+{% include figure.liquid path="assets/img/projet10-clients.png" title="Gestion des clients" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projet10-qr.png" title="QR code de configuration client" class="img-fluid rounded z-depth-1" %}
 
 ## Compétences mobilisées
 
