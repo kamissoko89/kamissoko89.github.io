@@ -2,7 +2,7 @@
 layout: page
 title: Veille technologique - Proxmox vs VMware ESXi
 description: Étude comparative des hyperviseurs pour aide à la décision en environnement PME/TPE
-img: assets/img/4.jpg
+img: assets/img/projet4-image1.png
 importance: 4
 category: veille
 related_publications: false
@@ -40,6 +40,11 @@ Proxmox VE, VMware ESXi, documentation officielle, forums communautaires, lab pe
 - Captures des interfaces d'administration
 - Préconisations selon les profils (entreprise, formation, usage perso)
 - Bibliographie des sources web
+
+## Résultats & Captures
+
+{% include figure.liquid path="assets/img/projet4-image1.png" title="Comparatif Proxmox / ESXi" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projet4-image2.png" title="Interfaces d'administration" class="img-fluid rounded z-depth-1" %}
 
 ## Compétences mobilisées
 
