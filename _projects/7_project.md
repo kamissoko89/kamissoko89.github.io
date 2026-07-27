@@ -2,11 +2,13 @@
 layout: page
 title: Supervision avec Centreon
 description: Déploiement d'une solution de monitoring pour surveiller disponibilité et services critiques
-img: assets/img/7.jpg
+img: assets/img/projet7-couverture.jpg
 importance: 7
 category: infrastructure
 related_publications: false
 ---
+
+{% include figure.liquid path="assets/img/projet7-couverture.jpg" title="Supervision avec Centreon" class="img-fluid rounded z-depth-1" %}
 
 ## Contexte
 
@@ -20,11 +22,16 @@ Déployer une solution de supervision avec Centreon pour :
 - Être alerté automatiquement en cas de panne
 - Centraliser les métriques sur une interface web lisible
 
+## Outils utilisés
+
+Centreon, Linux (Oracle/CentOS), SNMP, SSH, VMware, pfSense
+
+## Schéma d'architecture
+
+{% include figure.liquid path="assets/img/projet7-schema.png" title="Schéma de supervision" class="img-fluid rounded z-depth-1" %}
+
 ## Démarche et mise en œuvre
 
-**Outils utilisés** : Centreon, Linux (Oracle/CentOS), SNMP, SSH, VMware, pfSense
-
-**Étapes** :
 - Installation de Centreon sur une VM Linux dédiée
 - Configuration réseau et accès à l'interface Web d'administration
 - Ajout des hôtes (VMs, routeur, pare-feu pfSense)
@@ -40,6 +47,20 @@ Déployer une solution de supervision avec Centreon pour :
 - Tableau de bord centralisé
 - Documentation d'installation + captures des interfaces
 - Captures des états (OK / Warning / Critical)
+
+## Résultats & Captures
+
+**Dashboard principal**
+
+{% include figure.liquid path="assets/img/projet7-dashboard.png" title="Dashboard Centreon" class="img-fluid rounded z-depth-1" %}
+
+**Vue globale des hôtes supervisés**
+
+{% include figure.liquid path="assets/img/projet7-allcentreon.png" title="Vue globale Centreon" class="img-fluid rounded z-depth-1" %}
+
+**Disponibilité des services**
+
+{% include figure.liquid path="assets/img/projet7-dispo.jpg" title="Disponibilité des services" class="img-fluid rounded z-depth-1" %}
 
 ## Compétences mobilisées
 
