@@ -2,11 +2,13 @@
 layout: page
 title: Participation à des communautés techniques
 description: Veille collaborative et contribution active dans des communautés IT et cybersécurité
-img: assets/img/5.jpg
+img: assets/img/projet5-image1.png
 importance: 5
 category: veille
 related_publications: false
 ---
+
+{% include figure.liquid path="assets/img/projet5-image1.png" title="Participation aux communautés techniques" class="img-fluid rounded z-depth-1" %}
 
 ## Objectif du projet
 
