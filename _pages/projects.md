@@ -2,7 +2,7 @@
 layout: page
 title: projets
 permalink: /projects/
-description: Mes réalisations techniques en administration systèmes, réseaux et cybersécurité.
+description: Cette section présente les principaux projets techniques que j'ai réalisés dans le cadre de ma formation, de mon activité professionnelle et de mon homelab. Ils illustrent des problématiques concrètes en administration systèmes, réseaux, virtualisation, cybersécurité et automatisation.
 nav: true
 nav_order: 3
 display_categories: [infrastructure, securite, reseau, automatisation, veille]
