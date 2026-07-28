@@ -1,6 +1,6 @@
 ---
 layout: about
-title:  À propos
+title:  À Propos
 permalink: /
 
 profile:
