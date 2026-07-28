@@ -1,7 +1,7 @@
 ---
 layout: page
-title: projets
-permalink: /projects/
+title: Projets
+permalink: /Projects/
 description: Cette section présente les principaux projets techniques que j'ai réalisés dans le cadre de ma formation, de mon activité professionnelle et de mon homelab. Ils illustrent des problématiques concrètes en administration systèmes, réseaux, virtualisation, cybersécurité et automatisation.
 nav: true
 nav_order: 3
@@ -10,7 +10,7 @@ horizontal: false
 ---
 
 <!-- pages/projects.md -->
-<div class="projects">
+<div class="Projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
